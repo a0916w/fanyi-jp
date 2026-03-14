@@ -1,0 +1,23 @@
+# Sakura LLM API 配置
+api:
+  base_url: "http://localhost:8080"
+  endpoint: "/v1/chat/completions"
+  model: "sakura"
+
+# 翻译参数
+translation:
+  temperature: 0.1
+  top_p: 0.3
+  max_tokens: 1024
+  frequency_penalty: 0.0
+
+# 文件处理
+file:
+  input_dir: "./input"
+  output_dir: "./output"
+  encoding: "utf-8"
+
+# 术语表
+glossary:
+  enabled: false
+  path: "./glossary/default.csv"
